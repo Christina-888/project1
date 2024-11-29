@@ -3,7 +3,11 @@
 @use "abstracts/mixin";
 @use "components/header";
 @use "components/main";
-@use "components/section";
+@use "components/gallery";
 @use "components/aside";
 @use "components/footer";
 @use "components/widget";
+@use "components/cards-list";
+@use "components/title-wrapper";
+@use "components/order-button";
+@use "components/body";

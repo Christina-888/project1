@@ -1,0 +1,27 @@
+.order-button {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    gap: 4px;
+    min-height: 114px;
+    width: 114px;
+    background-image: url(/assets/img/pictures/ellipse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .order-button__order-arrow {
+        padding-top: 15px;
+        padding-left: 18px;
+        height: 14px;
+        width: 14px;
+      }
+      .order-button__order-caption {
+        width: 80%;
+        transform-origin: top left;
+        transform: rotate(-14deg);
+        padding-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 255, 255);
+      }
+  }
