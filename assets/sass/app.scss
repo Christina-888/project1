@@ -2,7 +2,6 @@
 @use "abstracts/variables";
 @use "abstracts/mixin";
 @use "components/header";
-@use "components/main";
 @use "components/gallery";
 @use "components/aside";
 @use "components/footer";
@@ -11,3 +10,6 @@
 @use "components/title-wrapper";
 @use "components/order-button";
 @use "components/body";
+@use "components/main-container";
+@use "components/buying-container";
+@use "components/discounts";

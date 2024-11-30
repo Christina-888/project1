@@ -1,0 +1,75 @@
+@use "../abstracts/variables";
+
+.buying-container {
+  margin-left: variables.$side-margin;
+  margin-right: variables.$side-margin;
+  border-radius: 70px;
+  background-size: 60.6px 60.6px;
+  background-repeat: repeat;
+  background-position: 50px 10px, 50px 10px;
+  background-color: rgba(250, 242, 231, 1);
+  background-image: radial-gradient(circle, rgba(229, 228, 210, 1) 3px, transparent 2px), radial-gradient(circle, rgba(229, 228, 210, 1) 3px, transparent 2px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  max-height: 450px;  
+  
+  .buying-container__image {
+    grid-area: 1/1/2/2;
+    margin-top: 4.8%;
+    margin-left: 5%;
+  }
+
+  .text {
+    grid-area: 1/2/2/3;
+    margin-top: 2%; 
+    
+    .text__subtitle {
+      grid-area: 1/2/2/3;
+      margin-top: 10%;
+      color: variables.$black-color;
+      font-family: variables.$main-font;
+      font-size: 2.9vw;
+      font-weight: 500;
+      text-align: left;
+      text-transform: uppercase;
+      width: 90%;    
+    }
+  
+    .text__wrapper {
+      display: flex;
+
+      .text__point {
+        width: 46px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgb(161, 196, 135);
+        align-items: center; 
+        justify-content: center; 
+        display: flex;         
+
+        .text__number {
+          color: variables.$black-color;
+          font-family: variables.$main-font;
+          font-size: 1.5vw;
+          font-weight: 400;
+        }          
+      }
+
+      .text__offer {
+        color: variables.$black-color;
+        font-family: variables.$main-font;
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        margin-left: 4%;
+        width: 50%;
+      }
+      
+      .text__offer_second {
+        width: 30%;
+      }
+    }
+  }
+}
