@@ -1,0 +1,53 @@
+@use "../abstracts/variables";
+.cards-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .cards-list {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .cards-list__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(234, 247, 229);
+        border-radius: 20px;
+        min-height: 100%;
+        width: 32%;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 64px;
+        padding-bottom: 24px;
+        box-sizing: border-box;
+      }
+      .cards-list__img {
+        width: 100%;
+        max-width: 321px;
+        object-fit: cover;
+        align-self: center;
+      }
+      .cards-list__subtitle {
+        font-size: 32px;
+        font-weight: 700;
+        color: variables.$black-color;
+        margin: 0;
+      }
+      .cards-list__caption {
+        font-size: 18px;
+        font-weight: 400;
+        color: variables.$black-color;
+        margin-top: 8px;
+        margin-bottom: 0;
+      }
+      .cards-list__price {
+        font-size: 18px;
+        font-weight: 500;
+        color: variables.$black-color;
+        margin-top: 24px;
+        margin-bottom: 0;
+      }
+  }
