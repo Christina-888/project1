@@ -6,15 +6,16 @@
     height: 100vh;
     z-index: 999;
     background-color: rgba(243, 243, 243, .5);
-    display: grid;
-    align-items: center;
+    display: flex;
     justify-content: center;
     overflow-y: auto;
 }
 
 .order{
-    max-width: 900px; 
+    max-width: 891px; 
     max-height: 911px;
+    margin: 0 auto;
+    min-width: 45%;
     border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px grey;
@@ -23,11 +24,21 @@
     padding-top: 5px; 
     overflow-y: auto;
 }
-@media (max-width: 900px) {
+@media (max-width: 891px) { /* Пример, подберите значения по своему усмотрению */
     .order {
-        max-width: 95%;
+      width: 95%; /* Уменьшаем ширину на меньших экранах */
     }
-}
+  }
+  @media (max-width: 704px) {
+    .order {
+      width: 90%; /* Ещё меньше на планшетах */
+    }
+  }
+  @media (max-width: 335px) {
+    .order {
+      width: 98%; /* Адаптация под мобильные телефоны */
+    }
+  }
 .title{
     justify-content: space-between;
     display: flex;
@@ -61,19 +72,9 @@
 .order-items{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: center;
-    gap: 20px;
+    gap: 40px;
 }
-@media (max-width: 295px) {
-    .order-items{
-        max-width: 95%;
-    }
-}
-@media (max-height: 250px) {
-    .order-items{
-        max-height: 95%;
-    }
-}
+
 .item{
     background-color: rgb(250, 243, 231);
     border-radius: 20px;
@@ -87,12 +88,9 @@
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: center;
+    
 }
-@media (max-height: 250px) {
-    .order-items{
-        max-height: 95%;
-    }
-}
+
 h2 {
     margin-bottom: 8px; 
 }
@@ -114,6 +112,7 @@ p {
     user-select: none;
     align-self: flex-end;
     margin-top: 14px;
+    background-image: url(/assets/img/pictures/pick.svg);
     
 }
 .custom-checkbox+label::before {
@@ -133,18 +132,20 @@ p {
 }
 .custom-checkbox:checked+label::before {
     align-self: flex-end;
-    border-color: #000000;
-    background-color: #000000;
+    border-color: #A1C487;
+    background-color: transparent;
+    background-image: url(/assets/img/pictures/check.png);
 }
 /* стили при наведении курсора на checkbox */
 .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
-    border-color: #000000;
+    border-color: #A1C487;
 }
   /* стили для активного состояния чекбокса (при нажатии на него) */
 .custom-checkbox:not(:disabled):active+label::before {
     align-self: flex-end;
-    background-color: #602323;
-    border-color:#000000 ;
+    background-color:#A1C487;
+    border-color:transparent;
+    
 }
   /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus+label::before {
