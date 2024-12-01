@@ -156,7 +156,7 @@ p {
     border-color: #A1C487;
     align-self: flex-end;
 }
-  /* стили для чекбокса, находящегося в состоянии disabled */
+
 .custom-checkbox:disabled+label::before {
     background-color: #A1C487;
     align-self: flex-end;
