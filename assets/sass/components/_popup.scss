@@ -24,14 +24,14 @@
     padding-top: 5px; 
     overflow-y: auto;
 }
-@media (max-width: 891px) { /* Пример, подберите значения по своему усмотрению */
+@media (max-width: 891px) {
     .order {
       width: 95%; /* Уменьшаем ширину на меньших экранах */
     }
   }
   @media (max-width: 704px) {
     .order {
-      width: 90%; /* Ещё меньше на планшетах */
+      width: 90%; /* На планшетах */
     }
   }
   @media (max-width: 335px) {
