@@ -51,3 +51,45 @@
         margin-bottom: 0;
       }
   }
+
+  @media screen and (max-width: 1264px) {
+    .cards-list {
+      gap: 20px;
+      @media screen and (max-width: 1063px) {
+        .cards-list__card {
+          width: 48%;
+        }
+        .cards-list__card:last-child {
+          display: none;
+        }
+      } 
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .cards-list {
+    .cards-list__subtitle {
+      font-size: 28px;
+    }
+  }
+  }
+  @media screen and (max-width: 602px) {
+    .cards-list {
+    .cards-list__subtitle {
+      font-size: 24px;
+    }
+  }  
+  }
+  @media screen and (max-width: 563px) {
+    .cards-list {
+    .cards-list__card {
+      width: 96%;
+    }
+    .cards-list__caption {
+      font-size: 14px;
+    }
+    .cards-list__price {
+      font-size: 14px;
+    }
+  }
+  }
+  
