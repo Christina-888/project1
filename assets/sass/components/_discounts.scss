@@ -9,7 +9,7 @@
     background-color: rgb(252, 138, 17);
     position: relative;
     width: 150%;
-    height: 100px;
+    max-height: 100px;
     left: -4%;
     margin-top: 9%;
     transform: rotate(3.00deg);
@@ -33,7 +33,7 @@
     background-color: rgb(161, 196, 135);
     position: relative;
     width: 150%;
-    height: 100px;
+    max-height: 100px;
     left: -4%;
     margin-top: -5%;
     transform: rotate(-2.00deg);
