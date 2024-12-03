@@ -25,3 +25,22 @@
         color: rgb(255, 255, 255);
       }
   }
+  @media screen and (max-width: 602px) {
+    .order-button {
+      margin-top: 40px;
+    }
+  }
+  @media screen and (max-width: 563px) {
+    .order-button {
+      min-height: 80px;
+      width: 80px;
+      margin-top: 20px;
+    .order-button__order-caption {
+      font-size: 14px;
+    }
+    .order-button__order-arrow {
+      padding-left: 8px;
+    }
+  }
+  }
+  

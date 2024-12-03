@@ -24,3 +24,31 @@
         margin-bottom: 40px;
       }
   }
+  @media screen and (max-width: 1063px) {
+    .title-wrapper {
+      width: 70%;
+    .title-wrapper__title {
+      font-size: 28px;
+    }
+  }
+  }
+  @media screen and (max-width: 837px) {
+    .title-wrapper {
+      width: 85%;
+    }
+  }
+  @media screen and (max-width: 780px) {
+    .title-wrapper {
+      width: 95%;
+    }
+  }
+  @media screen and (max-width: 563px) {
+    .title-wrapper { 
+      width: 100%;
+    .title-wrapper__text {
+      font-size: 13px;
+      padding: 0;
+    }
+  }
+  }
+  
