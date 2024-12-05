@@ -3,7 +3,7 @@
 .discounts {
   position: relative;
   overflow: hidden;
-  margin-top: 6%;
+  margin-top: 5%;
   padding-bottom: 7%;  
 
   .discounts__tape {
@@ -40,5 +40,17 @@
     transform: rotate(-2.00deg);
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .discounts .discounts__tape {
+    max-height: 240px;
+  }
+}
+
+@media screen and (min-width: 4000px) {
+  .discounts .discounts__tape {
+    max-height: 380px;
   }
 }
