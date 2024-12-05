@@ -60,6 +60,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
+    justify-items: center
 }
 
 .item{
@@ -72,12 +73,16 @@
     font-family: DM Sans;
     display: flex;
     flex-direction: column;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
 }
     
+.item-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 .image{
     width: 172px;
@@ -116,9 +121,7 @@
     align-items: center;
     user-select: none;
     align-self: flex-end;
-    margin-top: 14px;
-    background-image: url(/assets/img/pictures/pick.svg);
-    
+    margin-top: 14px;   
 }
 .custom-checkbox+label::before {
     content: '';
@@ -245,6 +248,12 @@
         width: 100%;
         height: auto;
         margin: 0;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 3fr;
+        }
+    .custom-checkbox {
+        grid-column-start: span 3;
     }
     .image {
         width: 100%;
@@ -261,29 +270,46 @@
     }
     .image-container {
         display: none; 
+    }
+    .item-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
-}
-@media (min-width: 780px) {
+
+
+@media (max-width: 1000px) {
+    .popup {
+        margin-top: 80px;
+    }
+    
 .order-items {
     flex-wrap: wrap;
     justify-content: space-between;
+    justify-items: center
+
 }
 .title-order {
     font-size: 20px;
 }
 .item {
     width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 .order-lower-container {
     display: flex;
-    margin-left: 20px;
+    margin-left: 0.1em;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.image-container{
-    align-self: flex-end;
+    
 
+.header-order {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;  
 }
 }
-
