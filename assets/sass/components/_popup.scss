@@ -313,3 +313,33 @@
     flex-wrap: nowrap;  
 }
 }
+
+@media (min-width: 1000px) {
+    .popup {
+        display: flex;
+        align-items: flex-start;
+    }
+    .order {
+        max-width: 891px; 
+        margin: 0 auto; 
+        display: flex; 
+        flex-direction: column;
+       
+    }
+
+    .order-items {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        justify-items: center;
+        
+    }
+
+    .item {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        justify-items: center; 
+    }
+    
+    }
