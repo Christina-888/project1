@@ -234,28 +234,32 @@
     .order {
         grid-template-columns: 1fr; 
         padding: 20px;
-        max-width: 95%;
+        max-width: 100%;
     }
     .title-order {
         font-size: 20px;
     }
     .order-items {
+        height: auto;
         display: flex; 
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .item {
-        width: 100%;
         height: auto;
         margin: 0;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
         }
-    .custom-checkbox {
-        grid-column-start: span 3;
+
+    .checkbox-container {
+        flex-direction: row-reverse;
+        align-self: flex-end;
     }
     .image {
-        width: 50%;
+        width: 40%;
         height: auto;
         align-self: flex-end;
     }
@@ -264,6 +268,7 @@
     }
     .title-item {
         font-size: 18px;
+        flex-direction: row-reverse;
     }
     .subtitle-item {
         font-size: 14px;
