@@ -244,7 +244,8 @@
         display: flex; 
         flex-direction: column;
         align-items: center;
-        align-items: stretch; 
+        align-items: stretch;
+        gap: 0.625em;
     }
     .item {
         height: auto;
@@ -253,6 +254,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: stretch;
+        padding-top: 0%;
+        padding-bottom: 0%;
+
         }
         
 
@@ -264,6 +268,9 @@
         width: 40%;
         height: auto;
         align-self: flex-end;
+        margin-bottom: 0px;
+        margin-top: -2.5em; /* Отступ снизу от изображения */
+        
     }
     .order-lower-container {
         flex-direction: column;
