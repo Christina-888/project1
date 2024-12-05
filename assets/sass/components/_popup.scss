@@ -248,16 +248,16 @@
         width: 100%;
         height: auto;
         margin: 0;
-        width: 90%;
-        display: grid;
-        grid-template-columns: 3fr;
+        display: flex;
+        flex-direction: row;
         }
     .custom-checkbox {
         grid-column-start: span 3;
     }
     .image {
-        width: 100%;
+        width: 50%;
         height: auto;
+        align-self: flex-end;
     }
     .order-lower-container {
         flex-direction: column;
@@ -312,6 +312,7 @@
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;  
+    justify-content: space-between;
 }
 }
 
