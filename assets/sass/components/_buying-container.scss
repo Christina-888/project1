@@ -13,7 +13,7 @@
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr) minmax(30px, 1fr); 
+  grid-auto-rows: repeat(4, 1fr) minmax(30px, 1fr); 
   
   .buying-container__image {
     grid-area: 1/1/2/2;
@@ -88,6 +88,7 @@
   .buying-container .text .text__wrapper .text__point {
     width: 3em;
     height: 3em;
+
     .text__number {
       font-size: 2vw;
     }
@@ -101,7 +102,7 @@
 @media screen and (max-width: 425px) {
   .buying-container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr) minmax(30px, 1fr);
+    grid-auto-rows: repeat(2, 1fr) minmax(30px, 1fr);
     border-radius: 3em;
     background-position: 9% 1%, 9% 1%;
     margin-top: 8%;
