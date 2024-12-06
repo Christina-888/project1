@@ -22,7 +22,7 @@
 .text-block-a {
     position: absolute;
     left: 60%;
-    font-family: DMSans-medium;
+    // font-family: DMSans-medium;
     z-index: 1;
     font-weight: 500;
     font-size: 3vw;
@@ -76,6 +76,9 @@ margin: 25px;
 .text-block-c {
     font-family: DMSans-medium;
 }
+// p {
+//     font-family: DMSans-medium;
+// }
 
 .text-block-b {
     font-weight: 500%;
@@ -96,7 +99,7 @@ padding-top: 10px;
 }
 
 .text-block-d {
-    font-family: DMSans-medium;
+    // font-family: DMSans-medium;
     font-weight: 400%;
     font-size: 14px;
     line-height: 129%;

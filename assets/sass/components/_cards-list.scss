@@ -23,6 +23,11 @@
         padding-top: 64px;
         padding-bottom: 24px;
         box-sizing: border-box;
+        transition: all 0.3s;
+      }
+      .cards-list__card:hover {
+        transform: translateY(-5px);
+	      box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.1);
       }
       .cards-list__img {
         width: 100%;
