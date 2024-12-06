@@ -6,7 +6,7 @@
     gap: 4px;
     min-height: 114px;
     width: 114px;
-    background-image: url(/assets/img/pictures/ellipse.png);
+    background-image: url(../img/pictures/ellipse.png);
     background-repeat: no-repeat;
     background-size: contain;
     transition: background-image 0.5s ease-in-out;
@@ -28,7 +28,7 @@
       }
   }
   .order-button:hover {
-    background-image: url(/assets/img/pictures/ellipse_green.png);
+    background-image: url(../img/pictures/ellipse_green.png);
     }
   
     @media screen and (max-width: 602px) {
