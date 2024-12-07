@@ -245,10 +245,13 @@
         width: fit-content;
         width: 90%;
         overflow-x: hidden;
+        height: 70vh;
+        top: 1vh;
     }
     .title-order {
         font-size: 20px;
-        width:90vw;
+        width: 90vw;
+        height: 1vh;
     }
     .order-items {
         height: auto;
@@ -290,6 +293,7 @@
     }
     .order-lower-container {
         flex-direction: column;
+        
     }
     
 .form textarea {
@@ -361,10 +365,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    
-}
-    
-
+    margin-bottom: -5vh;
+    }
 
 .header-order {
     display: flex;
@@ -422,6 +424,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
+        margin-bottom: -5vh;
     }
         
     
@@ -434,5 +437,16 @@
     .checkbox-container {
         position: relative;
         right: -12.5em;
+    }
+}
+
+@media (min-width: 2000px) {
+    
+    .popup{
+        max-width: 891px; 
+        max-height: auto;
+        left: 50%;
+        right: 50%;
+
     }
 }
