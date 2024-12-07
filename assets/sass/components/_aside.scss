@@ -1,16 +1,10 @@
-@font-face {
-    src:url(img/font/DMSans-Medium.ttf);
-    font-family: DMSans-medium;
-}
+@use "../abstracts/variables";
+@use "../abstracts/mixin";
 
-@font-face {
-    src: url(img/font/DMSans-Italic.ttf);
-    font-family: DMSans-italik;
-}
 
 .block-a {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px;
     align-items: center;
@@ -22,7 +16,7 @@
 .text-block-a {
     position: absolute;
     left: 60%;
-    // font-family: DMSans-medium;
+    @include mixin.font;
     z-index: 1;
     font-weight: 500;
     font-size: 3vw;
@@ -31,7 +25,6 @@
     text-transform: uppercase;
     color: var(--black);
 }
-
 
 #green-a {
     font-style: italic;
@@ -45,6 +38,7 @@
 
 .image-block-a {
     position: absolute;
+    width: 40vmax;
     left: 10%;
 }
 
@@ -61,24 +55,27 @@ img {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    box-sizing: border-box;
     width: 100%;
+
 }
 
+
 .bl {  
+    box-sizing: border-box;
 margin: 25px;
+
 }
 
 
 .text-block-b {
-    font-family: DMSans-medium;
+    @include mixin.font;
 }
 
 .text-block-c {
-    font-family: DMSans-medium;
+    @include mixin.font;
 }
-// p {
-//     font-family: DMSans-medium;
-// }
+
 
 .text-block-b {
     font-weight: 500%;
@@ -99,7 +96,7 @@ padding-top: 10px;
 }
 
 .text-block-d {
-    // font-family: DMSans-medium;
+    
     font-weight: 400%;
     font-size: 14px;
     line-height: 129%;
@@ -138,24 +135,10 @@ padding-top: 10px;
 }
 
 .bl-2 {
-    position: relative;
-    width: 36%;
+    min-width: 36%;
     margin: 20px;
 }
 
-#block-for-girl {
-    position: absolute;
-    width: 525px;
-    height: 519px;
-    z-index: 0;
-}
-
-#girl {
-    position: absolute;
-    width: 525px;
-    height: 536px;
-    z-index: 1;
-}
 
 .gradient {
     display: inline-block;
@@ -164,5 +147,59 @@ padding-top: 10px;
     height: 147px;
     opacity: 0;
 }
+
 #girl:hover, .gradient:hover, .image-block-a:hover { opacity: .5; 
+}
+
+@media (max-width: 48em) {
+
+    .block-a {
+        flex-direction: column;
+        
+    }
+    
+    .image-block-a {
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .block-a-img {
+        height: 60vh;
+    }
+
+    .block-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bl-1 {
+        text-align: center;
+    }
+    
+    .text-block-d {
+        text-align: center;
+    }
+}
+
+@media (max-width: 30em) {
+    .image-block-a {
+        width: 50%;
+    }
+    
+    .block-a-img {
+        height: 60vh;
+
+    }
+    .block-2 {
+        flex-direction: column;
+        gap: 0.625em;
+    }
+
+.bl-1 {
+        font-size: 0.875em;
+    }
+    
+.text-block-d {
+        font-size: 0.75em; 
+    }
 }
