@@ -22,18 +22,20 @@
 }
 
 .footer__image {
-    width: 17em;
+    width: 30em;
     margin-top: 2em;
     height: auto;
-    border-radius: 50%;
-    background: #fff;
+    border-radius: 20%;
+    // background: #fff;
     padding: 0.625em; /* 10px */
+    margin-left: -10em;
 }
 
 .footer__logo {
-    font-size: 1.125em; /* 18px */
-    font-weight: bold;
+    // font-size: 1.125em;
+    // font-weight: bold;
     margin-top: 0.625em; /* 10px */
+    margin-left: -10em;
 }
 
 .footer__middle {
@@ -78,8 +80,8 @@
 }
 
 .footer__socials img {
-    width: 1.5em; /* 24px */
-    height: 1.5em; /* 24px */
+    width: 2.5em; /* 24px */
+    height: 2.5em; /* 24px */
 }
 
 .footer__contact {
