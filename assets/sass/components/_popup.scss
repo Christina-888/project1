@@ -236,14 +236,18 @@
     .popup {
         display: flex;
         align-items: flex-start;
+        
     }
     .order {
         grid-template-columns: 1fr; 
         padding: 20px;
-        max-width: 100%;
+        max-width: auto;
+        width: fit-content;
+        width:100vw;
     }
     .title-order {
         font-size: 20px;
+        width:90vw;
     }
     .order-items {
         height: auto;
@@ -252,6 +256,8 @@
         align-items: center;
         align-items: stretch;
         gap: 0.625em;
+        width:90vw;
+       
     }
     .item {
         height: auto;
@@ -262,6 +268,7 @@
         align-items: stretch;
         padding-top: 0%;
         padding-bottom: 0%;
+        width: auto;
         }
         
 
@@ -277,7 +284,7 @@
         height: auto;
         align-self: flex-end;
         margin-bottom: 0px;
-        margin-top: -2.5em; /* Отступ снизу от изображения */
+        margin-top: -2.5em; 
         
     }
     .order-lower-container {
@@ -303,6 +310,14 @@
     .item-header {
         flex-direction: column
     }
+   .order-lower-container {
+    max-width: 10%; 
+    height: auto;
+    display: flex; 
+        flex-direction: column;
+        align-items: center;
+        align-items: stretch;
+    }
 }
 
 
@@ -314,7 +329,6 @@
         }
 .order {
     overflow-x: hidden;
-    overflow-y: hidden;
     max-height: 95%;
 }
     
