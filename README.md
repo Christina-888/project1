@@ -28,7 +28,7 @@ _sass --watch assets/sass/app.scss assets/style/style.css_
 
 # Команда проекта:
 
-- [**Кристина Быкадорова**](https://t.me/Kr_istina_Sergeevna) - Front-End Engineer, Team-Lead
+- [**Кристина Вашедская**](https://t.me/Kr_istina_Sergeevna) - Front-End Engineer, Team-Lead
 - [**Саргылана Петрова**](https://t.me/Sargylana_Petro) - Front-End Engineer, Team-Lead
 - [**Наталья Катц**](https://t.me/nataliakatz) - Front-End Engineer
 - [**Диана Сластёнова**](https://t.me/SlastenovaDiana) - Front-End Engineer
